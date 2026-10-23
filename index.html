@@ -164,7 +164,7 @@
             const scaledWidth = drawSizeX * tileSize;
             const scaledHeight = drawSizeY * tileSize;
             const centerX = canvas.width / 2 + drawOffsetX * tileSize;
-            const centerY = canvas.height / 2 - drawOffsetZ * tileSize;
+            const centerY = canvas.height / 2 + drawOffsetZ * tileSize;
 
             ctx.drawImage(sprite, centerX - scaledWidth / 2, centerY - scaledHeight / 2, scaledWidth, scaledHeight);
         }, [sprite, gridWidth, gridHeight, drawSizeX, drawSizeY, drawOffsetX, drawOffsetZ, scale]);
